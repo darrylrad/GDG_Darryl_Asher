@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd gossip-girl && npm install && npm run build",
+  "outputDirectory": "gossip-girl/dist",
+  "installCommand": "echo 'install handled in buildCommand'"
+}

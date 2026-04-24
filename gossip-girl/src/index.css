@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Bibliophile';
+  src: url('./assets/BibliophileScript-Regular-D8DTnNEq.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ZTBros';
+  src: url('./assets/ZTBrosOskon90s-Regular-CROKvpw6.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RightGroteskMono';
+  src: url('./assets/PPRightGroteskMono-Fine-BidfrfbY.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NokiaFC';
+  src: url('./assets/nokiafc22.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'RightGroteskMono', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

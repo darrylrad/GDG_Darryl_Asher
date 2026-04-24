@@ -1,0 +1,54 @@
+.tea-section {
+  background: #FFFCF6;
+  position: relative;
+  min-height: 1100px;
+  overflow: hidden;
+}
+
+.eyes-sticky {
+  position: sticky;
+  top: calc(50vh - 42px);
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+  height: 0;
+}
+
+.envelope-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.envelope-field > * {
+  pointer-events: all;
+}
+
+.marquee-wrapper {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  background: #000751;
+  overflow: hidden;
+  padding: 0.55rem 0;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marqueeScroll 18s linear infinite;
+}
+
+.marquee-text {
+  font-family: 'Bibliophile', cursive;
+  font-size: 1.5rem;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

@@ -1,0 +1,85 @@
+.page1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #000751;
+  overflow: hidden;
+  cursor: default;
+  user-select: none;
+}
+
+.page1-content {
+  position: relative;
+  z-index: 5;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 7rem;
+}
+
+.page1-text-block {
+  max-width: 750px;
+}
+
+.p1-headline {
+  font-family: 'ZTBros', serif;
+  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  font-weight: 400;
+  margin: 0 0 0.15em;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.p1-middle-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.1em;
+}
+
+.p1-cursive {
+  font-family: 'Bibliophile', cursive;
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.p1-regular {
+  font-family: 'ZTBros', serif;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.p1-sub {
+  font-family: 'ZTBros', serif;
+  font-size: clamp(2.4rem, 4.8vw, 4.2rem);
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+.p1-envelope {
+  position: absolute;
+  bottom: 12%;
+  right: 12%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  padding: 0;
+}
+
+.p1-envelope:hover {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.page1-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: background 0.05s;
+}

@@ -1,0 +1,71 @@
+.landing-section {
+  background: #FFFCF6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.landing-body {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  overflow: hidden;
+}
+
+.xoxo-text {
+  font-family: 'RightGroteskMono', sans-serif;
+  font-size: clamp(8rem, 18vw, 17rem);
+  font-weight: 900;
+  color: #0015FF;
+  margin: 0;
+  line-height: 1;
+  z-index: 2;
+  letter-spacing: -0.02em;
+  user-select: none;
+}
+
+.landing-envelope-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 42%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  transition: transform 0.3s;
+}
+
+.landing-envelope-btn:hover .landing-envelope {
+  animation: wiggle 0.55s ease-in-out;
+}
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(-12deg); }
+  30%  { transform: rotate(12deg); }
+  45%  { transform: rotate(-9deg); }
+  60%  { transform: rotate(9deg); }
+  75%  { transform: rotate(-5deg); }
+  90%  { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.gossip-girl-watermark {
+  font-family: 'Bibliophile', cursive;
+  font-size: clamp(5rem, 11vw, 10rem);
+  font-weight: 600;
+  color: #0015FF;
+  opacity: 0.2;
+  position: absolute;
+  right: 3%;
+  bottom: 8%;
+  line-height: 1;
+  user-select: none;
+  z-index: 1;
+  text-align: left;
+}
